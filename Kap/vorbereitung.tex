@@ -52,7 +52,7 @@ Im Gegensatz zu den Fermionen unterliegen Bosonen nicht dem Pauli-Prinzip. Ander
 als im obigen Energieschema, ist es also für Bosonen möglich den selben
 Energiezustand zu besetzen. Dies wird später für die Theorie der Supraleitung 
 essentiell.
-   
+
 	\subsection{BCS-Theorie}
 Eine gute theoretische Beschreibung Supraleiter 1. Art bietet die BCS-Theorie. 
 Zwar kann durch diese die Hochtemperatursupraleitung auch erklärt werden, das 
@@ -73,39 +73,62 @@ Siehe hierzu Abbildung \ref{Abb:def}. Ein Elektron zieht die positiv geladenen K
 an, was diese zum Schwingen anregt. Nach einer viertel Schwingperiode erreicht die
 Konzentration der positiven Ladungen ihr Maximum und weitere Elektronen werden 
 angezogen. Durch die große Reichweite dieser Kraft, das erste Elektron ist nach
-einer viertel Schwingperiode schon weit durch den Festkörper gewandert, wird sie
+einer Viertel Schwingperiode schon weit durch den Festkörper gewandert, wird sie
 nicht durch die Coulomb-Abstoßung aufgehoben.
 \vspace{3pt}\\
 Grundlage der BCS-Theorie ist nun die Kopplung zweier Elektronen durch diese 
 Wechselwirkung, wodurch der Verbund durch eine bosonische Gesamtwellenfunktion
 beschrieben werden muss.
 
-    \subsection{Einteilung von Supraleitern}
-Wie bereits erwähnt gibt es verschiedene Arten von Supraleitern, die Typ-I und
-Typ-II Supraleiter. Unterschieden wird hier anhand des Verhaltens in einem 
-Magnetfeld. 
+		\subsubsection{Widerstandslose Leitung}
+Wie bereits erklärt, können die bosonischen Cooper-Paare nun alle den Grundzustand
+einnehmen. Dies führt zu einer den ganzen Festkörper überspannenden 
+Bose-Einstein-Wellenfunktion, weshalb die Supraleitung als auch makroskopischer
+Quantenzustand beschrieben wird. \\
+Die widerstandslose Leitung erklärt sich nun durch die Energielücke der Breite 
+$E_g$ zwischen dem Grundzustand der Cooper-Paare und dem Gitter. Eine Wechselwirkung
+zwischen Elektronengas und Gitter kann nicht stattfinden, solange die 
+Elektronenenergie $E_g$ nicht erreicht. Mit dieser Erklärung leuchtet auch die 
+Existenz der kritischen Stromstärke $I_c$ und der kritischen Temperatur $T_c$ ein.
+Überschreitet die Elektronenenergie durch thermische Anregung, oder auch durch
+einen Stromfluss die Energielücke, so brechen die Cooper-Paare auf und der 
+Festkörper geht wieder in den normalleitenden Zustand über.\\
 
-        \subsubsection{Typ-I Supraleiter}
-Der Typ-I Supraleiter ist der "klassische" Supraleiter. Die meisten Metallischen
-können hier zugeordnet werden. Legt man an einen Typ-I Supraleiter im 
-normalleitenden Zustand ein Magnetfeld an und kühlt diesen anschließend auf
-$T<T_c$, so wird das innere Magnetfeld, bis auf einen kleinen Bereich am Rand,
-vollständig verdrängt. Die supraleitende Phase kann durch ein Erwärmen über die
-kritische Temperatur $T_c$, das Anlegenen eines starken Magnetfelds mit einer 
-Feldstärke größer der kritischen Feldstärke $B_c$, oder dem Überschreiten
-der kritischen Stromdichte $J_c$ durchbrochen werden.\\
-Weiter haben Materialien diesen Typs meist eine sehr niedrige Sprungtemperatur 
-$T_c$ von nur wenigen Kelvin.
+	\subsection{Meisner-Ochsenfeld Effekt}
+Eine weitere wichtige Eigenschaft eines Supraleiters ist sein Verhalten im 
+Magnetfeld. Dieses wird durch den Meisner-Ochsenfeld Effekt beschrieben.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Abb/meisner.pdf}
+	\caption{Magnetfeld um einen Supraleiter vor und nach Abkühlung unter $T_c$}
+	%Von Piotr Jaworski, PioM EN DE PL; POLAND/Poznań - Inspiration: Image:EXPULSION.png, Gemeinfrei, https://commons.wikimedia.org/w/index.php?curid=325237
+	\label{Abb:meisner}
+\end{figure}
+Wie in Abbildung \ref{Abb:meisner} zu sehen, wird ein Magnetfeld, das oberhalb der
+kritischen Temperatur $T_c$ den Festkörper durchdringt, in der supraleitenden Phase
+aus dem Leiter verdrängt wird. Hier wird in einer dünnen Schicht unter der 
+Oberfläche ein Abschirmstrom induziert, der die Feldlinien des äußeren Feldes aus
+dem Material verdrängt. Der Supraleiter ist also ein idealer Diamagnet. Dieser 
+Effekt wird als Meisner-Ochsenfeld Effekt bezeichnet.
 
-        \subsubsection{Typ-II Supraleiter}
-Der Typ-II Supraleiter zeigt bis zum unteren kritischen Magnetfeld $B_{c1}$ 
-dasselbe Verhalten. Wird ein stärkeres Magnetfeld angelegt, so können Feldlinien
-in Form von Flussschläuchen (extra Kapitel?) in das Material eindringen. Durch
-ein Wandern dieser Flussschläuche und der daraus resultierenden Feldbewegung,
-entsteht auch ein elektrischer Widerstand im Supraleiter.
+		\subsubsection{Typ-I Supraleiter}
+Diese Art funktioniert genau wie in Abbildung \ref{Abb:meisner} gezeigt. In der 
+supraleitenden Phase wird das Feld aus dem Inneren verdrängt. Die Normalleitung 
+wird durch eine Temperatur größer $T_c$, einen Strom größer $I_c$, oder ein
+Magnetfeld stärker als die kritische Feldstärke $B_c$ wiederhergestellt. 
 
-%\begin{itemize}
-%    \item Bosonische Gesamtwellenfunktion
-%    \item Stöße durch Energiezustand nicht möglich?
-%    \item bosonen und fermionen
-%\end{itemize}
+		\subsubsection{Typ-II Supraleiter}
+Bei diesen Materialien gibt es eine untere kritische Feldstärke $B_{c1}$. Oberhalb
+dieser dringt das Magnetfeld in Form von Flusschläuchen, wie in Abbildung 
+\ref{Abb:flusschlauch} zu sehen, in den Festkörper ein. Der elektrische Widerstand
+bleibt jedoch weiterhin sehr klein.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Abb/flussschlauch.jpg}
+	\caption{Flussschläuche im Typ-II Supraleiter oberhalb von $B_{c1}$}
+	\label{Abb:flusschlauch}
+	% http://slideplayer.org/slide/789280/2/images/19/GL-Theorie:+Konsequenzen.jpg
+\end{figure}
+Übersteigt die Feldstärke den Wert der kritischen Feldstärke $B_{c2}$, so geht
+der Supraleiter endgültig in die normalleitende Phase über.
+
