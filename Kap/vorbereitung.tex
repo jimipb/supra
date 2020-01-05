@@ -122,7 +122,7 @@ Bei diesen Materialien gibt es eine untere kritische Feldstärke $B_{c1}$. Oberh
 dieser dringt das Magnetfeld in Form von Flusschläuchen, wie in Abbildung 
 \ref{Abb:flusschlauch} zu sehen, in den Festkörper ein. Der elektrische Widerstand
 bleibt jedoch weiterhin sehr klein.
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Abb/flussschlauch.jpg}
 	\caption{Flussschläuche im Typ-II Supraleiter oberhalb von $B_{c1}$}
@@ -132,3 +132,36 @@ bleibt jedoch weiterhin sehr klein.
 Übersteigt die Feldstärke den Wert der kritischen Feldstärke $B_{c2}$, so geht
 der Supraleiter endgültig in die normalleitende Phase über.
 
+	\section{Messtechnische Grundlagen}
+
+		\subsection{Vier-Punkt-Methode}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Abb/vierpunkt.png}
+	\caption{Vier-Punkt-Methode}
+	% Von Maciej UMacieju - Eigenes Werk, Gemeinfrei, https://commons.wikimedia.org/w/index.php?curid=2114288
+	\label{Abb:vierpunkt}
+\end{figure}
+Zur Minimierung von Störwiderständen bei der Messung, wird die Vier-Punkt-Methode 
+verwendet. Hierbei wird die Probenoberfläche mit vier Messspitzen kontaktiert. An
+den beiden äußeren Kontakten wird ein Strom angelegt, während an den Inneren eine
+Spannung gemessen wird. Der Aufbau ist in Abbildung \ref{Abb:vierpunkt} zu sehen.
+Durch den sehr großen Innenwiderstand des Spannungsmessers kann der Widerstand
+durch das Ohm'sche Gesetz berechnet werden.
+
+		\subsection{Thermoelement}
+Zur Temperaturmessung wird ein Paar aus verschiedenen metallischen Leitern am Ende
+verbunden. Durch den thermoelektrischen Effekt treten bei einer Temperaturänderung
+im Inneren der Metalle Ströme auf.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Abb/thermo.pdf}
+	\caption{Aufbau eines Thermoelements}
+	% Von Arne Hückelheim - Eigenes Werk (Originaltext: selbst gezeichnet nach Vorlage Datei:Thermoschema.jpg), Gemeinfrei, https://commons.wikimedia.org/w/index.php?curid=18483818
+	\label{Abb:thermo}
+\end{figure}
+Man misst nun, wie in Abbildung \ref{Abb:thermo} dargestellt die Differenz der 
+Thermospannungen in den beiden Metallen. Mithilfe der Referenztemperatur kann nun
+hieraus die Temperatur an der Messstelle berechnet werden.
+
+		\subsection{Lock-In Verstärker}
