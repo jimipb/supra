@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.30)  5 JAN 2020 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.30)  5 JAN 2020 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,7 +795,7 @@ Class scrreprt Warning: \float@addtolists detected!
 
 ]
 chapter 2.
-<Abb/energieniveaus-elektronen.jpg, id=66, 462.528pt x 520.344pt>
+<Abb/energieniveaus-elektronen.jpg, id=70, 462.528pt x 520.344pt>
 File: Abb/energieniveaus-elektronen.jpg Graphic file (type jpg)
 <use Abb/energieniveaus-elektronen.jpg>
 Package pdftex.def Info: Abb/energieniveaus-elektronen.jpg  used on input line 
@@ -807,7 +807,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [4
 
 ]
-<Abb/deformation.pdf, id=78, 531.8711pt x 249.82462pt>
+<Abb/deformation.pdf, id=87, 531.8711pt x 249.82462pt>
 File: Abb/deformation.pdf Graphic file (type pdf)
 <use Abb/deformation.pdf>
 Package pdftex.def Info: Abb/deformation.pdf  used on input line 68.
@@ -827,7 +827,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--96
 
  []
 
-<Abb/meisner.pdf, id=86, 401.5pt x 401.5pt>
+<Abb/meisner.pdf, id=97, 401.5pt x 401.5pt>
 File: Abb/meisner.pdf Graphic file (type pdf)
 <use Abb/meisner.pdf>
 Package pdftex.def Info: Abb/meisner.pdf  used on input line 102.
@@ -842,7 +842,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
                                                   \fi \fi 
 l.119 
        <./Abb/deformation.pdf>]
-<Abb/flussschlauch.jpg, id=104, 376.11484pt x 234.68323pt>
+<Abb/flussschlauch.jpg, id=115, 376.11484pt x 234.68323pt>
 File: Abb/flussschlauch.jpg Graphic file (type jpg)
 <use Abb/flussschlauch.jpg>
 Package pdftex.def Info: Abb/flussschlauch.jpg  used on input line 127.
@@ -851,7 +851,7 @@ Package pdftex.def Info: Abb/flussschlauch.jpg  used on input line 127.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Abb/vierpunkt.png, id=105, 1284.8pt x 816.04875pt>
+<Abb/vierpunkt.png, id=116, 1284.8pt x 816.04875pt>
 File: Abb/vierpunkt.png Graphic file (type png)
 <use Abb/vierpunkt.png>
 Package pdftex.def Info: Abb/vierpunkt.png  used on input line 140.
@@ -864,23 +864,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.151 
+l.152 
        <./Abb/meisner.pdf>]
-<Abb/thermo.pdf, id=125, 442.49063pt x 170.93405pt>
+<Abb/thermo.pdf, id=140, 442.49063pt x 170.93405pt>
 File: Abb/thermo.pdf Graphic file (type pdf)
 <use Abb/thermo.pdf>
-Package pdftex.def Info: Abb/thermo.pdf  used on input line 158.
+Package pdftex.def Info: Abb/thermo.pdf  used on input line 159.
 (pdftex.def)             Requested size: 334.60571pt x 129.26176pt.
 
 
-LaTeX Warning: Reference `Abb:thermo' on page 8 undefined on input line 163.
-
-) (./Kap/durchfuehrung.tex
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}
-) has been already used, duplicate ignored
+) (./Kap/durchfuehrung.tex [8pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -906,7 +902,7 @@ Overfull \hbox (1.16032pt too wide) in paragraph at lines 3--4
 s Niob-Films und ei-nes Spu-lenk[]orpers
  []
 
-<tieftemp_aufbau.png, id=144, 558.28575pt x 340.27126pt>
+<tieftemp_aufbau.png, id=165, 558.28575pt x 340.27126pt>
 File: tieftemp_aufbau.png Graphic file (type png)
 <use tieftemp_aufbau.png>
 Package pdftex.def Info: tieftemp_aufbau.png  used on input line 8.
@@ -925,7 +921,7 @@ Overfull \hbox (8.53578pt too wide) in paragraph at lines 8--9
                                                   \fi \fi 
 l.21 
       <./tieftemp_aufbau.PNG>]
-<4,45.png, id=160, 722.7pt x 481.8pt>
+<4,45.png, id=180, 722.7pt x 481.8pt>
 File: 4,45.png Graphic file (type png)
 <use 4,45.png>
 Package pdftex.def Info: 4,45.png  used on input line 25.
@@ -937,7 +933,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
-<B_c_Spule.png, id=162, 722.7pt x 481.8pt>
+<B_c_Spule.png, id=182, 722.7pt x 481.8pt>
 File: B_c_Spule.png Graphic file (type png)
 <use B_c_Spule.png>
 Package pdftex.def Info: B_c_Spule.png  used on input line 46.
@@ -968,7 +964,7 @@ pu-lenk[]orpers, $\OML/cmm/m/it/10.95 A[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10
 ])[] = [] []$ 
  []
 
-<delta_u.png, id=176, 722.7pt x 481.8pt>
+<delta_u.png, id=196, 722.7pt x 481.8pt>
 File: delta_u.png Graphic file (type png)
 <use delta_u.png>
 Package pdftex.def Info: delta_u.png  used on input line 83.
@@ -983,7 +979,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 91.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<8,73_Film.png, id=184, 722.7pt x 481.8pt>
+<8,73_Film.png, id=204, 722.7pt x 481.8pt>
 File: 8,73_Film.png Graphic file (type png)
 <use 8,73_Film.png>
 Package pdftex.def Info: 8,73_Film.png  used on input line 97.
@@ -995,7 +991,7 @@ Package pdftex.def Info: 8,73_Film.png  used on input line 97.
                                                   \fi \fi 
 l.102 
        <./delta_u.png (PNG copy)>]
-<R(T).png, id=192, 722.7pt x 481.8pt>
+<R(T).png, id=212, 722.7pt x 481.8pt>
 File: R(T).png Graphic file (type png)
 <use R(T).png>
 Package pdftex.def Info: R(T).png  used on input line 105.
@@ -1007,7 +1003,7 @@ Package pdftex.def Info: R(T).png  used on input line 105.
                                                   \fi \fi 
 l.110 
        <./8,73_Film.png (PNG copy)>]
-<B_c_Film.png, id=198, 722.7pt x 481.8pt>
+<B_c_Film.png, id=218, 722.7pt x 481.8pt>
 File: B_c_Film.png Graphic file (type png)
 <use B_c_Film.png>
 Package pdftex.def Info: B_c_Film.png  used on input line 115.
@@ -1031,12 +1027,12 @@ same identifier (name{figure.3.7}) has been already used, duplicate ignored
 l.127 \[
         T\approx \sqrt{\dfrac{U}{0,0637}+16111} - \SI{49,5}{\kelvin}\] <./B_c_F
 ilm.png (PNG copy)>]
-<hochtemp_aufbau.png, id=211, 303.534pt x 434.22224pt>
+<hochtemp_aufbau.png, id=231, 303.534pt x 434.22224pt>
 File: hochtemp_aufbau.png Graphic file (type png)
 <use hochtemp_aufbau.png>
 Package pdftex.def Info: hochtemp_aufbau.png  used on input line 132.
 (pdftex.def)             Requested size: 199.16928pt x 284.92451pt.
-<fail.png, id=212, 722.7pt x 481.8pt>
+<fail.png, id=232, 722.7pt x 481.8pt>
 File: fail.png Graphic file (type png)
 <use fail.png>
 Package pdftex.def Info: fail.png  used on input line 140.
@@ -1060,7 +1056,7 @@ same identifier (name{figure.3.9}) has been already used, duplicate ignored
 l.154 B
        ei beiden Messungen tritt ein Offset in y-Richtung auf, d.h. auch unt...
  <./fail.png (PNG copy)>]
-<a-b.png, id=226, 722.7pt x 481.8pt>
+<a-b.png, id=247, 722.7pt x 481.8pt>
 File: a-b.png Graphic file (type png)
 <use a-b.png>
 Package pdftex.def Info: a-b.png  used on input line 158.
@@ -1070,7 +1066,7 @@ Overfull \hbox (8.53578pt too wide) in paragraph at lines 158--159
  [] 
  []
 
-<c.png, id=228, 722.7pt x 481.8pt>
+<c.png, id=249, 722.7pt x 481.8pt>
 File: c.png Graphic file (type png)
 <use c.png>
 Package pdftex.def Info: c.png  used on input line 169.
@@ -1093,12 +1089,12 @@ ame identifier (name{figure.3.11}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.180 
        <./c.png (PNG copy)>]
-<levitation.jpeg, id=240, 676.77844pt x 507.39563pt>
+<levitation.jpeg, id=261, 676.77844pt x 507.39563pt>
 File: levitation.jpeg Graphic file (type jpg)
 <use levitation.jpeg>
 Package pdftex.def Info: levitation.jpeg  used on input line 183.
 (pdftex.def)             Requested size: 341.43306pt x 255.98889pt.
-<schwebt.jpeg, id=241, 677.53125pt x 508.14844pt>
+<schwebt.jpeg, id=262, 677.53125pt x 508.14844pt>
 File: schwebt.jpeg Graphic file (type jpg)
 <use schwebt.jpeg>
 Package pdftex.def Info: schwebt.jpeg  used on input line 191.
@@ -1117,7 +1113,7 @@ l.196
 l.198 \chapter
               {Anhang} <./schwebt.jpeg>]
 chapter 4.
-<graphen_spule.png, id=252, 2187.372pt x 3011.25pt>
+<graphen_spule.png, id=273, 2187.372pt x 3011.25pt>
 File: graphen_spule.png Graphic file (type png)
 <use graphen_spule.png>
 Package pdftex.def Info: graphen_spule.png  used on input line 202.
@@ -1125,7 +1121,7 @@ Package pdftex.def Info: graphen_spule.png  used on input line 202.
 [25
 
 ]
-<graphen_niob.png, id=258, 2230.734pt x 2527.041pt>
+<graphen_niob.png, id=279, 2230.734pt x 2527.041pt>
 File: graphen_niob.png Graphic file (type png)
 <use graphen_niob.png>
 Package pdftex.def Info: graphen_niob.png  used on input line 209.
@@ -1140,7 +1136,7 @@ chapter 5.
 ) (./Kap/quellen.tex [28
 
 ]
-Overfull \hbox (2.05113pt too wide) in paragraph at lines 3--5
+Overfull \hbox (2.05113pt too wide) in paragraph at lines 9--11
 [][]$\OT1/cmtt/m/n/10.95 https : / / chemiezauber . de / images / q1 / materie 
 / energieniveaus-[]elektronen .
  []
@@ -1156,20 +1152,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `supra.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 21131 strings out of 494435
- 400876 string characters out of 6173462
+ 21143 strings out of 494435
+ 401047 string characters out of 6173462
  571022 words of memory out of 5000000
- 24535 multiletter control sequences out of 15000+600000
+ 24541 multiletter control sequences out of 15000+600000
  544502 words of font info for 69 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  45i,15n,71p,9104b,1063s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1187,10 +1176,10 @@ nts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on supra.pdf (29 pages, 29093772 bytes).
+Output written on supra.pdf (29 pages, 29096088 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 333 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 359 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 287 words of extra memory for PDF output out of 10000 (max. 10000000)
 
