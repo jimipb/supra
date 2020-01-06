@@ -1,8 +1,6 @@
 \chapter{Vorbereitung}
 Supraleiter zeichnen sich durch eine widerstandslose Leitung unter einer kritischen
-Temperatur $T_c$ aus. Schon seit Anfang des 20. Jahrhunderts bekannt ist dies in
-Metallen bei sehr tiefen Temperaturen nahe des Nullpunktes. Hochtemperatursupraleiter
-konnten dagegen erst 1986 entdeckt werden. Die theoretischen Grundlagen hinter 
+Temperatur $T_c$ aus. Die theoretischen Grundlagen hinter 
 diesen Effekten sind zahlreich und zum Teil noch heute ungeklärt. Hier soll ein
 kleiner Überblick gegeben werden.
 
@@ -66,7 +64,7 @@ Deformationsspur hinterlässt.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{Abb/deformation.pdf}
-    \caption{Deformationsspur hinter einem Elektron}
+    \caption{Deformationsspur hinter einem Elektron \cite{bcswiki}}
     \label{Abb:def}
 \end{figure}
 Siehe hierzu Abbildung \ref{Abb:def}. Ein Elektron zieht die positiv geladenen Kerne
@@ -78,7 +76,7 @@ nicht durch die Coulomb-Abstoßung aufgehoben.
 \vspace{3pt}\\
 Grundlage der BCS-Theorie ist nun die Kopplung zweier Elektronen durch diese 
 Wechselwirkung, wodurch der Verbund durch eine bosonische Gesamtwellenfunktion
-beschrieben werden muss.
+beschrieben werden muss. \cite{bcswiki}, \cite{hunklinger}
 
 		\subsubsection{Widerstandslose Leitung}
 Wie bereits erklärt, können die bosonischen Cooper-Paare nun alle den Grundzustand
@@ -92,7 +90,8 @@ Elektronenenergie $E_g$ nicht erreicht. Mit dieser Erklärung leuchtet auch die
 Existenz der kritischen Stromstärke $I_c$ und der kritischen Temperatur $T_c$ ein.
 Überschreitet die Elektronenenergie durch thermische Anregung, oder auch durch
 einen Stromfluss die Energielücke, so brechen die Cooper-Paare auf und der 
-Festkörper geht wieder in den normalleitenden Zustand über.\\
+Festkörper geht wieder in den normalleitenden Zustand über. \cite{hunklinger}, 
+\cite{suprawiki}
 
 	\subsection{Meisner-Ochsenfeld Effekt}
 Eine weitere wichtige Eigenschaft eines Supraleiters ist sein Verhalten im 
@@ -100,8 +99,8 @@ Magnetfeld. Dieses wird durch den Meisner-Ochsenfeld Effekt beschrieben.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Abb/meisner.pdf}
-	\caption{Magnetfeld um einen Supraleiter vor und nach Abkühlung unter $T_c$}
-	%Von Piotr Jaworski, PioM EN DE PL; POLAND/Poznań - Inspiration: Image:EXPULSION.png, Gemeinfrei, https://commons.wikimedia.org/w/index.php?curid=325237
+	\caption{Magnetfeld um einen Supraleiter vor und nach Abkühlung unter $T_c$ 
+	\cite{meisnerwiki}}
 	\label{Abb:meisner}
 \end{figure}
 Wie in Abbildung \ref{Abb:meisner} zu sehen, wird ein Magnetfeld, das oberhalb der
@@ -109,13 +108,15 @@ kritischen Temperatur $T_c$ den Festkörper durchdringt, in der supraleitenden P
 aus dem Leiter verdrängt wird. Hier wird in einer dünnen Schicht unter der 
 Oberfläche ein Abschirmstrom induziert, der die Feldlinien des äußeren Feldes aus
 dem Material verdrängt. Der Supraleiter ist also ein idealer Diamagnet. Dieser 
-Effekt wird als Meisner-Ochsenfeld Effekt bezeichnet.
+Effekt wird als Meisner-Ochsenfeld Effekt bezeichnet. \cite{hunklinger}, 
+\cite{meisnerwiki}
 
 		\subsubsection{Typ-I Supraleiter}
 Diese Art funktioniert genau wie in Abbildung \ref{Abb:meisner} gezeigt. In der 
 supraleitenden Phase wird das Feld aus dem Inneren verdrängt. Die Normalleitung 
 wird durch eine Temperatur größer $T_c$, einen Strom größer $I_c$, oder ein
 Magnetfeld stärker als die kritische Feldstärke $B_c$ wiederhergestellt. 
+\cite{hunklinger}
 
 		\subsubsection{Typ-II Supraleiter}
 Bei diesen Materialien gibt es eine untere kritische Feldstärke $B_{c1}$. Oberhalb
@@ -125,12 +126,12 @@ bleibt jedoch weiterhin sehr klein.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Abb/flussschlauch.jpg}
-	\caption{Flussschläuche im Typ-II Supraleiter oberhalb von $B_{c1}$}
+	\caption{Flussschläuche im Typ-II Supraleiter oberhalb von $B_{c1}$ 
+		     \cite{flussschlauchbild}}
 	\label{Abb:flusschlauch}
-	% http://slideplayer.org/slide/789280/2/images/19/GL-Theorie:+Konsequenzen.jpg
 \end{figure}
 Übersteigt die Feldstärke den Wert der kritischen Feldstärke $B_{c2}$, so geht
-der Supraleiter endgültig in die normalleitende Phase über.
+der Supraleiter endgültig in die normalleitende Phase über. \cite{hunklinger}
 
 	\section{Messtechnische Grundlagen}
 
@@ -158,7 +159,6 @@ im Inneren der Metalle Ströme auf.
 	\centering
 	\includegraphics[width=0.8\textwidth]{Abb/thermo.pdf}
 	\caption{Aufbau eines Thermoelements \cite{thermowiki}}
-	% Von Arne Hückelheim - Eigenes Werk (Originaltext: selbst gezeichnet nach Vorlage Datei:Thermoschema.jpg), Gemeinfrei, https://commons.wikimedia.org/w/index.php?curid=18483818
 	\label{Abb:thermo}
 \end{figure}
 Man misst nun, wie in Abbildung \ref{Abb:thermo} dargestellt die Differenz der 
@@ -166,3 +166,18 @@ Thermospannungen in den beiden Metallen. Mithilfe der Referenztemperatur kann nu
 hieraus die Temperatur an der Messstelle berechnet werden. \cite{thermowiki}
 
 		\subsection{Lock-In Verstärker}
+Der Lock-In Verstärker wird zur Signalverstärkung und Säuberung, gerade bei 
+schwachen Messsignalen, eingesetzt. Effektiv wirkt er wie ein extrem schmalbandiger
+Bandpassfilter.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Abb/lockin.pdf}
+	\caption{Schematischer Aufbau eines Lock-In Verstärkers \cite{lockinwiki}}
+	\label{Abb:lockin}
+\end{figure}
+Der schematische Aufbau ist in Abbildung \ref{Abb:lockin} zu sehen. Das Messsignal
+wird mit einem Referenzsignal multipliziert, dessen Phase zuvor verschoben werden 
+kann. Anschließend wird durch einen Tiefpass integriert. Unterscheiden sich die 
+Frequenzen der Messung und der Referenz, so liefert die Integration null. Durch
+Variation der Referenzfrequenz kann also ein bestimmter Anteil des Messsignals
+"gelockt" werden. \cite{lockinwiki}, \cite{kreuzwiki}
