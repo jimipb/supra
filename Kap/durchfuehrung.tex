@@ -12,9 +12,9 @@ Im ersten Versuchsteil sollten wir das Verhalten eines Niob-Films und eines Spul
 \end{figure}
 
 \subsection{Messungen am Spulenkörper}
-Der Strom durch die Magnetspule wurde von 0 bis 4A und wieder zurück auf 0 gesweept. Dabei wurde die induzierte Spannung des Spulenkörpers gegen den Strom durch die Magnetspule aufgetragen. Mit der Gleichung des Magnetfelds einer langen Spule
+Der Strom durch die Magnetspule wurde von 0 bis 4A und wieder zurück auf 0 gesweept. Dabei wurde die induzierte Spannung des Spulenkörpers gegen den Strom durch die Magnetspule aufgetragen. Mit der Gleichung des Magnetfelds einer langen Spule 
 
-\[B=\mu_{0}\dfrac{N}{l}\cdot I\]
+\[B=\mu_{0}\dfrac{N}{l}\cdot I \cite{drans}\]
 ergibt sich also bei 4A eine maximale Magnetfeldstärke von 0,2T. Die Windungszahl $N$ der Spule betrug $N=6245$, die Länge l der Spule 15,8cm und die magnetische Feldkonstante $\mu_{0}$ beträgt ca. $\SI{1,257e-6}{\newton\per\square\ampere}$.
 
 Eine beispielhafte Messkurve ist in Abb. \ref{4,45} zu sehen. Es handelt sich hierbei um die Messung der Spule bei 4,45K. Die Kurve beginnt im oberen Ast des Graphen bei 0T und bleibt bis zu einer kritischen Magnetfeldstärke von $B_{c}\approx\SI{0,052}{\tesla}$ relativ konstant bei $U_{ind}\approx\SI{0,3}{\milli\volt}$, was durch die Magnetfeldverdrängung eines Supraleiters (Meißner-Effekt) zu erwarten war. Bei Erreichen der kritischen Magnetfeldstärke $B_{c}$ wird der Bleikern der Spule schlagartig normalleitend, wodurch sich eine hohe Flussänderung durch die Spule ergibt, welche zu einem kurzen und hohen Anstieg der induzierten Spannung führt. Danach bleibt die induzierte Spannung bei einem konstanten Wert von ca. 1,1mV. Beim Herunterfahren des Magnetfelds ändert sich mit dem Vorzeichen der Flussänderung auch das Vorzeichen von $U_{ind}$ und die Kurve wird an der x-Achse gespiegelt. Beim kritischen Magnetfeld ist hier nur ein kleiner Peak zu erkennen und anschließend sinkt der Betrag der induzierten Spannung leicht ab. 
@@ -30,9 +30,9 @@ Eine beispielhafte Messkurve ist in Abb. \ref{4,45} zu sehen. Es handelt sich hi
 
 Insgesamt wurden 21 solcher Messkurven bei Temperaturen von 4,45K bis 8,03K aufgenommen. Aus diesen Messreihen wurden dann jeweils die kritischen Magnetfeldstärken $B_{c}$ ermittelt und geplottet, um eine $B_{c} (T)$ Kurve zu erhalten (siehe Abb. \ref{B_c_Spule}). Ab der Messung bei 7,34K setzte der normalleitende Zustand schon ohne Magnetfeld ein, die kritische Temperatur $T_{c}$ war ab hier also überschritten.
 
-Die Kurve wurde mittels qti-plot gemäß der Funktion
+Die Kurve wurde mittels qti-plot gemäß der Funktion 
 
-\[B_{c}(T)=B_{c}(0)\cdot\bigg[1-\Big(\dfrac{T}{T_{c}}\Big)^2\bigg] \] 
+\[B_{c}(T)=B_{c}(0)\cdot\bigg[1-\Big(\dfrac{T}{T_{c}}\Big)^2\bigg] \cite{hunklinger} \] 
 gefittet, wobei folgende Werte errechnet wurden:
 \begin{itemize}
 	\item $B_{c}(0)=\SI{0,0858}{\tesla}$
@@ -50,8 +50,8 @@ gefittet, wobei folgende Werte errechnet wurden:
 \end{figure}
 
 Zusätzlich sollte noch die magnetische Suszeptibilität $\chi_{s}$ des Bleikerns im supraleitenden Zustand bestimmt werden. Der Index \textit{s} steht hierbei im Folgenden für den supraleitenden Zustand, der Index \textit{n} für den normalleitenden Zustand.
-Über die Beziehung
-\[U_{ind}=N_{p}A_{p}\mu_{0}\mu \dfrac{N}{l}\dot{I} \]
+Über die Beziehung 
+\[U_{ind}=N_{p}A_{p}\mu_{0}\mu \dfrac{N}{l}\dot{I} \cite{drans}\] 
 folgt mit $\mu=1+\chi$:
 
 \[U_{ind}=\dfrac{N_{p}A_{p}\mu_{0}N\dot{I}}{l}(1+\chi)\]
@@ -149,7 +149,7 @@ Die a-b-Ebene bezeichnet beim YBCO-Kristall die Ebene, in der die $CuO_{2}$-Schi
 
 Beim Verlauf der R(T)-Kurve (siehe Abb. \ref{ab})  fällt auf, dass der Widerstand zunächst mit sinkender Temperatur steigt, wodurch schon erkannt werden kann, dass es sich beim YBCO-Kristall um keinen metallischen Leiter handelt, da hier ein gegenteiliges Verhalten zu erwarten wäre.
 
-Die Sprungtemperatur $T_{c}$ konnten wir zu $T_{c}\approx\SI{92}{\kelvin}$ bestimmen, was dem Literaturwert entspricht. %Hunklinger
+Die Sprungtemperatur $T_{c}$ konnten wir zu $T_{c}\approx\SI{92}{\kelvin}$ bestimmen, was dem Literaturwert entspricht. \cite{hunklinger}
 
 Bei beiden Messungen tritt ein Offset in y-Richtung auf, d.h. auch unterhalb der Sprungtemperatur fällt der gemessene Widerstand des Kristalls nicht auf exakt Null. Dieser Offset ist durch die Übergangswiderstände der Messkontakte zu erklären, welche durch den Übergang von Metall (vergoldete Messkontakte) auf Keramikmaterial (YBCO-Tablette) zustande kommen. Der Offset liegt bei der Messung in a-b-Richtung bei ca. $\SI{1}{\ohm}$ in c-Richtung bei ca. $\SI{1,8}{\ohm}$.
 
@@ -176,7 +176,7 @@ Die Messung in c-Richtung ergab eine relativ ähnliche R(T)-Kurve wie in a-b-Ric
 \section{Levitation}
 Im letzten Versuchsabschnitt wurde die Levitation eines Supraleiters untersucht. Dazu wurde eine YBCO-Tablette und ein kleiner Permanentmagnet verwendet.
 
-Zuerst wurde die Tablette in einer Schale mit flüssigem Stickstoff unter die Sprungtemperatur abgekühlt. Mit einer Pinzette näherten wir nun den Magneten an die Tablette an und stellten eine deutliche abstoßende Kraft fest. Erklären lässt sich dies durch die Magnetfeldverdrängung eines Supraleiters. Die YBCO-Tablette ist im supraleitenden Zustand perfekt diamagnetisch, das heißt sie baut ein gleich großes Gegenfeld zum Magnetfeld des Permanentmagneten auf, was dann durch die abstoßende Kraft bemerkbar wird. Wir konnten so jedoch keinen Zustand herstellen, in dem der Magnet über der Tablette schwebt. Um dies zu erreichen, legten wir die Tablette in die leere Schale, positionierten darauf ein kleines Stück Styropor als Abstandhalter und legten darauf den Magneten. Anschließend wurde die Tablette wieder mit flüssigem Stickstoff abgekühlt. Nach Entfernen des Abstandhalters schwebte der Magnet über dem YBCO Kristall (siehe Abb. \ref{schwebt}). Der Magnet konnte sogar für wenige Sekunden mit einer Pinzette angehoben und gedreht werden, während die Tablette weiterhin unter dem Magneten schwebte (siehe Abb. \ref{levitation}). Erklären lässt sich dieses Phänomen dadurch, dass das Magnetfeld des Magneten die YBCO-Tablette im normalleitenden Zustand durchdringen kann. Beim Abkühlen unter die Sprungtemperatur bilden sich nun magnetische Flussschläuche im Supraleiter aus, welche von ringförmigen Abschirmströmen umgeben werden. Der Supraleiter als idealer Diamagnet wirkt nun jeder Änderung des Magnetfelds entgegen, wodurch der energetisch günstige Zustand somit dann erreicht ist, wenn sich die relative Position der Tablette zum Magneten nicht ändert. Wird der Magnet also angehoben, folgt die Tablette in konstantem Abstand.
+Zuerst wurde die Tablette in einer Schale mit flüssigem Stickstoff unter die Sprungtemperatur abgekühlt. Mit einer Pinzette näherten wir nun den Magneten an die Tablette an und stellten eine deutliche abstoßende Kraft fest. Erklären lässt sich dies durch die Magnetfeldverdrängung eines Supraleiters. Die YBCO-Tablette ist im supraleitenden Zustand perfekt diamagnetisch, das heißt sie baut ein gleich großes Gegenfeld zum Magnetfeld des Permanentmagneten auf, was dann durch die abstoßende Kraft bemerkbar wird. Wir konnten so jedoch keinen Zustand herstellen, in dem der Magnet über der Tablette schwebt. Um dies zu erreichen, legten wir die Tablette in die leere Schale, positionierten darauf ein kleines Stück Styropor als Abstandhalter und legten darauf den Magneten. Anschließend wurde die Tablette wieder mit flüssigem Stickstoff abgekühlt. Nach Entfernen des Abstandhalters schwebte der Magnet über dem YBCO Kristall (siehe Abb. \ref{schwebt}). Der Magnet konnte sogar für wenige Sekunden mit einer Pinzette angehoben und gedreht werden, während die Tablette weiterhin unter dem Magneten schwebte (siehe Abb. \ref{levitation}). Erklären lässt sich dieses Phänomen dadurch, dass das Magnetfeld des Magneten die YBCO-Tablette im normalleitenden Zustand durchdringen kann. Beim Abkühlen unter die Sprungtemperatur bilden sich nun magnetische Flussschläuche im Supraleiter aus, welche von ringförmigen Abschirmströmen umgeben werden. Der Supraleiter als idealer Diamagnet wirkt nun jeder Änderung des Magnetfelds entgegen, wodurch der energetisch günstige Zustand somit dann erreicht ist, wenn sich die relative Position der Tablette zum Magneten nicht ändert. Wird der Magnet also angehoben, folgt die Tablette in konstantem Abstand. \cite{hunklinger}
 
 \begin{figure}[H]
 	\begin{center}
