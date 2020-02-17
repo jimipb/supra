@@ -92,7 +92,8 @@ wenn deren Wellenvektor in $\delta k$ anfängt oder endet.
 	\centering
 	\includegraphics[width=0.8\textwidth]{Abb/cooperstreu.pdf}
 	\caption{links: Impulserhaltung der Paarwechselwirkung, rechts: Streuprozess in
-			 einem Cooper Paar: der $\vec{K}$ der Schwerpunktsbewegung ist null}
+			 einem Cooper Paar: der $\vec{K}$ der Schwerpunktsbewegung ist null
+			 \cite{hunklinger}}
 	\label{streucooper}
 \end{figure}
 Dies ist in Abbildung \ref{streucooper} dargestellt. Hieraus kann auch gefolgert 
@@ -116,8 +117,10 @@ Wellenvektoren, wird über diese Paarzustände summiert:
 $| A_{\vec{k}} |^2$ beschreibt hierbei die Wahrscheinlichkeit ein Elektronenpaar
 im Zustand $(k,-k)$ anzutreffen.\\
 Bei der Betrachtung des Grenzfalls T=0 gilt für die Wellenzahl der Elektronen 
-$\displaystyle k_F < k < \sqrt{\frac{2m(E_F + \hbar \omega_D)}{\hbar^2}}$. $A_k$ 
-verschwindet dann für alle anderen $k$.\\
+\[
+	\displaystyle k_F < k < \sqrt{\frac{2m(E_F + \hbar \omega_D)}{\hbar^2}}.
+\]
+$A_k$ verschwindet dann für alle anderen $k$.\\
 Weiter muss die Schrödingergleichung mit dem Potential $\tilde{V}(\vec{r}_1,
 \vec{r}_2)$, bestehend aus der attraktiven und der abstoßenden 
 Coulombwechselwirkung, gelöst werden. Diese langwierige Rechnung wird hier nicht 
@@ -128,7 +131,7 @@ Auch wird die Zustandsdichte um die Fermi-Kante als konstant angenommen.\\
 Für die Energieänderung im Zuge der attraktiven Wechselwirkung errechnet sich 
 \[
 	\Delta E = E - 2 E_F = \frac{2\hbar \omega_D}{1- e^{4/(\tilde{V}_0 D(E_F))}}
-			 \approx - 2 \hbar \omega_D e^{4/(\tilde{V}_0 D(E_F)}
+			 \approx - 2 \hbar \omega_D e^{4/(\tilde{V}_0 D(E_F))}
 \]
 Im letzten Schritt wurde $\tilde{V}_0 D(E_F) << 1$ angenommen. Die Energie der
 Cooper-Paare wird also durch die attraktive Wechselwirkung reduziert.
@@ -136,6 +139,79 @@ Cooper-Paare wird also durch die attraktive Wechselwirkung reduziert.
 Grundlage der BCS-Theorie ist nun die Kopplung zweier Elektronen durch diese 
 Wechselwirkung, wodurch der Verbund durch eine bosonische Gesamtwellenfunktion
 beschrieben werden muss. \cite{bcswiki}, \cite{hunklinger}
+
+		\subsubsection{BCS-Grundzustand}
+Als BCS-Grundzustand wird Supraleitung am absoluten Temperaturnullpunkt bezeichnet. 
+Zur Konstruktion der Wellenfunktionen werden nun die Paarzustände aus dem 
+vorherigen Abschnitt benutzt. Mit der Wahrscheinlichkeit für die Besetzung des
+Zustands $(\vec{k} \uparrow, - \vec{k} \downarrow)$ $v_{\vec{k}}^2$, die Spins 
+werden hier durch die Pfeile berücksichtigt, kann mit $u_{\vec{k}}^2 = 
+1 - v_{\vec{k}}^2$ die Wahrscheinlichkeit, dass ebendieser Paarzustand unbesetzt 
+ist, angegeben werden. Zur Gesamtenergie $W_0$ tragen im Grundzustand die kinetische
+Energie der Elektronen und die bereits behandelte Wechselwirkungsenergie der 
+Paarbildung bei. Somit ergibt sich
+\[
+	W_0 = 2 \sum_{\vec{k}} v_{\vec{k}}^2 \eta_{\vec{k}} - 
+		  \frac{\tilde{V}_0}{V_P} \sum_{\vec{k}, \vec{k}'} v_{\vec{k}} u_{\vec{k'}}
+		  						  u_{\vec{k}} v_{\vec{k}'}
+\]
+Der erste Term beschreibt die kinetische Energie. $\eta_{\vec{k}} = 
+\hbar^2 \vec{k}^2/2m - E_F$ gibt hierbei die Abweichung der kinetischen Energie von
+der Fermi-Energie an. Die möglichen Spinausrichtungen werden durch den Faktor zwei 
+vor der Summe berücksichtigt. Der hintere Term spiegelt die Wechselwirkungsenergie 
+wider, die auf der Streuung $( \vec{k} \uparrow, - \vec{k} \downarrow)$ zu 
+$(\vec{k}' \uparrow, - \vec{k}' \downarrow)$ beruht.\\
+Mit der Abkürzung
+\[
+	\Delta = \frac{\tilde{V}_0}{V_P} \sum_{\vec{k}'} u_{\vec{k}'} v_{\vec{k}'}
+\]
+führt die Minimierung von $W_0$ bezüglich $v_{\vec{k}}$ und $u_{\vec{k}}$, unter 
+Berücksichtigung des Zusammenhangs $u_{\vec{k}}^2 + v_{\vec{k}}^2 = 1$ zu:
+\[
+	2 v_{\vec{k}} u_{\vec{k}} \eta_{\vec{k}} - \Delta(v_{\vec{k}}^2 - u_{\vec{k}}^2)
+	=0
+\]
+Mit
+\[
+	E_{\vec{k}}^2 = \eta_{\vec{k}}^2 + \Delta^2
+\]
+können die Wahrscheinlichkeitsamplituden zu 
+\[
+	u_{\vec{k}}^2 = \frac{1}{2} \left( 1 + \frac{ \eta_{\vec{k}} }{E_{\vec{k}}} 
+	\right)
+	\qquad 
+	v_{\vec{k}}^2 = \frac{1}{2} \left( 1 - \frac{ \eta_{\vec{k}} }{E_{\vec{k}}} 
+	\right)
+\]
+umgeformt werden. Für die Energie $W_0$ ergibt sich damit:
+\[
+	W_0 = \sum_{\vec{k}} \eta_{\vec{k}} \left( 1-\frac{\eta_{\vec{k}}}{E_{\vec{k}}}
+		  \right) - \frac{\Delta^2 V_P}{\tilde{V}_0}
+\]
+Vergleicht man die innere Energie des Normalleiters $W_0^n = 2 \sum_{|\vec{k}| < k_F}
+\eta_{\vec{k}}$ mit $W_0$, so ist der Energiegewinn $W_kon = W_0 - W_0^n$, die 
+Kondensationsenergie, nach einer Reihe von Umformungen gegeben durch:
+\[
+	\frac{W_kon}{V_P} = - \frac{1}{4} D (E_F) \Delta^2
+\]
+Diese Energie wird frei, wenn die Leitungselektronen in den supraleitenden Zustand
+kondensieren.
+
+		\subsubsection{Energielücke}
+Setzt man in den Ausdruck für die Konstante $\Delta$ aus vorherigem Abschnitt die
+Ausdrücke für $u_{\vec{k}}$ und $v_{\vec{k}}$ ein, so erhält man folgenden Term:
+\[
+	\Delta = \frac{1}{2} \frac{\tilde{V}_0}{V_P} \sum_{\vec{k}} 
+			 \frac{\Delta}{\sqrt{\eta_{\vec{k}}^2 + \Delta^2}}
+\]
+Nach einigen Umformungen und der Annahme, dass die Zustandsdichte um die Fermi-Kante
+konstant ist, ist $\Delta$ durch
+\[
+	\Delta = \frac{\hbar \omega_D}{\sinh \left( \frac{2}{\tilde{V}_0 D(E_F} \right)}
+		   \approx 2 \hbar \omega_D e^{-2 / (\tilde{V}_0 D(E_F))}
+\]
+gegeben. Für den letzte Term wurde angenommen, dass $\tilde{V}_0 D(E_F) << 1$. 
+$\Delta$ stellt eine Energielücke im Energiespektrum der Elektronen dar.
 
 		\subsubsection{Widerstandslose Leitung}
 Wie bereits erklärt, können die bosonischen Cooper-Paare nun alle den Grundzustand
