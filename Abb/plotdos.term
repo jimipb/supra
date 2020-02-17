@@ -1,0 +1,151 @@
+jonas@jonas-t520:~
+$ man gnuplot
+Kein Handbucheintrag für gnuplot vorhanden
+jonas@jonas-t520:~
+$ gnuplot
+bash: gnuplot: Kommando nicht gefunden.
+jonas@jonas-t520:~
+$ sudo apt install gnuplot
+[sudo] Passwort für jonas: 
+Paketlisten werden gelesen... Fertig
+Abhängigkeitsbaum wird aufgebaut.       
+Statusinformationen werden eingelesen.... Fertig
+Die folgenden zusätzlichen Pakete werden installiert:
+  aglfn gnuplot-data gnuplot-qt liblua5.3-0 libwxgtk3.0-0v5
+Vorgeschlagene Pakete:
+  gnuplot-doc
+Die folgenden NEUEN Pakete werden installiert:
+  aglfn gnuplot gnuplot-data gnuplot-qt liblua5.3-0 libwxgtk3.0-0v5
+0 aktualisiert, 6 neu installiert, 0 zu entfernen und 108 nicht aktualisiert.
+Es müssen 5.985 kB an Archiven heruntergeladen werden.
+Nach dieser Operation werden 21,8 MB Plattenplatz zusätzlich benutzt.
+Möchten Sie fortfahren? [J/n] j
+Holen:1 http://deb.debian.org/debian buster/main amd64 aglfn all 1.7-3 [29,2 kB]
+Holen:2 http://deb.debian.org/debian buster/main amd64 gnuplot-data all 5.2.6+dfsg1-1+deb10u1 [180 kB]
+Holen:3 http://deb.debian.org/debian buster/main amd64 liblua5.3-0 amd64 5.3.3-1.1 [120 kB]
+Holen:4 http://deb.debian.org/debian buster/main amd64 libwxgtk3.0-0v5 amd64 3.0.4+dfsg-8 [4.398 kB]
+Holen:5 http://deb.debian.org/debian buster/main amd64 gnuplot-qt amd64 5.2.6+dfsg1-1+deb10u1 [1.131 kB]
+Holen:6 http://deb.debian.org/debian buster/main amd64 gnuplot all 5.2.6+dfsg1-1+deb10u1 [128 kB]
+Es wurden 5.985 kB in 4 s geholt (1.349 kB/s).
+Vormals nicht ausgewähltes Paket aglfn wird gewählt.
+(Lese Datenbank ... 468178 Dateien und Verzeichnisse sind derzeit installiert.)
+Vorbereitung zum Entpacken von .../0-aglfn_1.7-3_all.deb ...
+Entpacken von aglfn (1.7-3) ...
+Vormals nicht ausgewähltes Paket gnuplot-data wird gewählt.
+Vorbereitung zum Entpacken von .../1-gnuplot-data_5.2.6+dfsg1-1+deb10u1_all.deb ...
+Entpacken von gnuplot-data (5.2.6+dfsg1-1+deb10u1) ...
+Vormals nicht ausgewähltes Paket liblua5.3-0:amd64 wird gewählt.
+Vorbereitung zum Entpacken von .../2-liblua5.3-0_5.3.3-1.1_amd64.deb ...
+Entpacken von liblua5.3-0:amd64 (5.3.3-1.1) ...
+Vormals nicht ausgewähltes Paket libwxgtk3.0-0v5:amd64 wird gewählt.
+Vorbereitung zum Entpacken von .../3-libwxgtk3.0-0v5_3.0.4+dfsg-8_amd64.deb ...
+Entpacken von libwxgtk3.0-0v5:amd64 (3.0.4+dfsg-8) ...
+Vormals nicht ausgewähltes Paket gnuplot-qt wird gewählt.
+Vorbereitung zum Entpacken von .../4-gnuplot-qt_5.2.6+dfsg1-1+deb10u1_amd64.deb ...
+Entpacken von gnuplot-qt (5.2.6+dfsg1-1+deb10u1) ...
+Vormals nicht ausgewähltes Paket gnuplot wird gewählt.
+Vorbereitung zum Entpacken von .../5-gnuplot_5.2.6+dfsg1-1+deb10u1_all.deb ...
+Entpacken von gnuplot (5.2.6+dfsg1-1+deb10u1) ...
+libwxgtk3.0-0v5:amd64 (3.0.4+dfsg-8) wird eingerichtet ...
+aglfn (1.7-3) wird eingerichtet ...
+liblua5.3-0:amd64 (5.3.3-1.1) wird eingerichtet ...
+gnuplot-data (5.2.6+dfsg1-1+deb10u1) wird eingerichtet ...
+gnuplot-qt (5.2.6+dfsg1-1+deb10u1) wird eingerichtet ...
+update-alternatives: /usr/bin/gnuplot-qt wird verwendet, um /usr/bin/gnuplot (gnuplot) im automatischen Modus bereitzustellen
+gnuplot (5.2.6+dfsg1-1+deb10u1) wird eingerichtet ...
+Trigger für man-db (2.8.5-2) werden verarbeitet ...
+Trigger für tex-common (6.11) werden verarbeitet ...
+Running mktexlsr. This may take some time... done.
+Trigger für libc-bin (2.28-10) werden verarbeitet ...
+jonas@jonas-t520:~
+$ man gnuplot
+jonas@jonas-t520:~
+$ gnuplot
+
+	G N U P L O T
+	Version 5.2 patchlevel 6    last modified 2019-01-01 
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2018
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'qt'
+gnuplot> f(x) = x/(sqrt(x**2 - a**2))
+gnuplot> a = 1
+gnuplot> plot f(X)
+         undefined variable: X
+
+gnuplot> plot f(x)
+gnuplot> set xrange [0:]
+gnuplot> plot f(x)
+gnuplot> h(x) = 0
+gnuplot> plot f(x), h(x)
+gnuplot> unset h(x)
+               ^
+         Unrecognized option.  See 'help unset'.
+
+gnuplot> clear
+gnuplot> f(x) = x/(sqrt(x**2 - a**2)) gnuplot> f(x) = x/(sqrt(x**2 
+gnuplot> 
+gnuplot> 
+gnuplot> 
+gnuplot> h(x) = 0
+gnuplot> plot h(x)
+Warning: empty y range [0:0], adjusting to [-1:1]
+gnuplot> plot h(x) (x>=1)
+Warning: empty y range [0:0], adjusting to [-1:1]
+
+gnuplot> plot h(x) (x>=1)
+                   ^
+         unexpected or unrecognized token
+
+gnuplot> plot (x &lt;1) ? h(x) : (x>=1) ? f(x) 
+                    ^
+         ')' expected
+
+gnuplot> (x &lt;1) ? plot h(x)
+         ^
+         invalid command
+
+gnuplot> plot (x &lt;1) ? h(x)
+                    ^
+         ')' expected
+
+gnuplot> plot (x &lt;1) ? h(x): (x>=1) ? f(x)
+                    ^
+         ')' expected
+
+gnuplot> plot (x &lt=1) ? h(x): (x>=1) ? f(x)
+                    ^
+         ')' expected
+
+gnuplot> plot (x &lt;=1) ? h(x): (x>=1) ? f(x)
+                    ^
+         ')' expected
+
+gnuplot> plot (x<1) ? h(x): (x>=1) ? f(x)
+                                         ^
+         expecting ':'
+
+gnuplot> plot (x<1) ? h(x): (x>=1) ? f(x): 1/0 w l
+gnuplot> plot (x<1) ? h(x): (x>=1) ? f(x): 1/0 w l lw 2 lc 6 t "Zustandsdichte"
+
+gnuplot> set 10000
+             ^
+         unrecognized option - see 'help set'.
+
+gnuplot> tick 10000
+         ^
+         invalid command
+
+gnuplot> set tick 10000
+             ^
+         unrecognized option - see 'help set'.
+
+gnuplot> set ylabel "Normierte Zustandsdichte"
+gnuplot> set xlabel "Normierte Energie"
+gnuplot> plot (x<1) ? h(x): (x>=1) ? f(x): 1/0 w l lw 2 lc 6 t "Zustandsdichte"
+gnuplot> 

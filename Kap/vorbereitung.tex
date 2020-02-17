@@ -189,10 +189,10 @@ umgeformt werden. Für die Energie $W_0$ ergibt sich damit:
 		  \right) - \frac{\Delta^2 V_P}{\tilde{V}_0}
 \]
 Vergleicht man die innere Energie des Normalleiters $W_0^n = 2 \sum_{|\vec{k}| < k_F}
-\eta_{\vec{k}}$ mit $W_0$, so ist der Energiegewinn $W_kon = W_0 - W_0^n$, die 
+\eta_{\vec{k}}$ mit $W_0$, so ist der Energiegewinn $W_{kon} = W_0 - W_0^n$, die 
 Kondensationsenergie, nach einer Reihe von Umformungen gegeben durch:
 \[
-	\frac{W_kon}{V_P} = - \frac{1}{4} D (E_F) \Delta^2
+	\frac{W_{kon}}{V_P} = - \frac{1}{4} D(E_F) \Delta^2
 \]
 Diese Energie wird frei, wenn die Leitungselektronen in den supraleitenden Zustand
 kondensieren.
@@ -211,7 +211,50 @@ konstant ist, ist $\Delta$ durch
 		   \approx 2 \hbar \omega_D e^{-2 / (\tilde{V}_0 D(E_F))}
 \]
 gegeben. Für den letzte Term wurde angenommen, dass $\tilde{V}_0 D(E_F) << 1$. 
-$\Delta$ stellt eine Energielücke im Energiespektrum der Elektronen dar.
+$\Delta$ stellt eine Energielücke im Energiespektrum der Elektronen dar.\\
+Betrachtet man den einfachsten angeregten Zustand im Supraleiter, so ist dieser
+durch einen besetzten Zustand in $(\vec{k}' \uparrow, - \vec{k}' \downarrow)$
+gegeben. Mit der Formel für die Energie $W_0$ ergibt sich für den 
+Energieunterschied
+\[
+	\delta E = 2 E_{\vec{k}'} = 2 \sqrt{\eta_{\vec{k}'}^2 + \Delta^2}
+\]
+Da $\eta_{\vec{k}'}$ beliebig kleine Werte annehmen kann gilt 
+\[
+	\delta E_{min} = 2 \Delta
+\]
+Der Faktor 2 erklärt sich durch das Entstehen von zwei ungepaarten Elektronen
+beim aufbrechen eines Cooper-Paars.\\
+Anregungen, teils Elektronen, teils Löcher, werden als Quasiteilchen bezeichnet.
+Die Energielücke $\Delta$ trennt nun den gemeinsamen Grundzustand der Cooper-Paare
+von den Zuständen der Quasiteilchen.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Abb/plotdos.pdf}
+	\caption{Zustandsdichte der Quasiteilchen im Supraleiter. Die y-Achse zeigt 
+			 die normierte Zustandsdichte $D_S/D_n$, die x-Achse die normierte
+			 Energie $E_k/\Delta$}
+	\label{plotdos}
+\end{figure}
+In Abbildung \ref{plotdos} ist die Zustandsdichte der Quasiteilchen als Funktion
+der Anregungsenergie gegeben. Die Cooper-Paare wären in diesem Plot durch eine 
+$\delta$-Funktion bei $E_k = 0$ geben.
+
+		\subsubsection{Endliche Temperatur}
+Nachdem die vorherigen Kapitel wichtige Ergebnisse für die Supraleitung am 
+Nullpunkt geliefert haben, soll nun endliche Temperaturen kurz betrachtet werden.
+Hier werden schon durch thermische Anregung Cooper-Paare aufgebrochen und 
+Quasiteilchen erzeugt, die für Cooper-Paare unzugängliche Zustände besetzen und
+so den Austausch virtueller Phononen behindern. Die Energielücke $\Delta(T)$ nimmt
+also für steigende Temperaturen ab und verschwindet bei $T_c$ ganz. Der Ausdruck
+für $\Delta(T)$ kann jedoch nur numerisch ausgewertet werden. Ein wichtiges, 
+materialunabhängiges Ergebnis ergibt:
+\[
+	\Delta(0) = 1,764 k_B T_c
+\]
+Obiger Wert für $\Delta(0)/k_BT_c$ stimmt in den meisten Fällen gut mit den 
+Messungen überein. Lediglich für sogenannte stark koppelnde Supraleiter, in denen
+$\tilde{V}_0 D(E_F)$ große Werte annimmt, weichen ab.
 
 		\subsubsection{Widerstandslose Leitung}
 Wie bereits erklärt, können die bosonischen Cooper-Paare nun alle den Grundzustand
