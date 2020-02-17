@@ -238,7 +238,7 @@ von den Zuständen der Quasiteilchen.
 \end{figure}
 In Abbildung \ref{plotdos} ist die Zustandsdichte der Quasiteilchen als Funktion
 der Anregungsenergie gegeben. Die Cooper-Paare wären in diesem Plot durch eine 
-$\delta$-Funktion bei $E_k = 0$ geben.
+$\delta$-Funktion bei $E_k = 0$ geben. \cite{hunklinger}
 
 		\subsubsection{Endliche Temperatur}
 Nachdem die vorherigen Kapitel wichtige Ergebnisse für die Supraleitung am 
@@ -250,26 +250,37 @@ also für steigende Temperaturen ab und verschwindet bei $T_c$ ganz. Der Ausdruc
 für $\Delta(T)$ kann jedoch nur numerisch ausgewertet werden. Ein wichtiges, 
 materialunabhängiges Ergebnis ergibt:
 \[
-	\Delta(0) = 1,764 k_B T_c
+	\Delta(0) = 1,764 \, k_B T_c
 \]
 Obiger Wert für $\Delta(0)/k_BT_c$ stimmt in den meisten Fällen gut mit den 
 Messungen überein. Lediglich für sogenannte stark koppelnde Supraleiter, in denen
-$\tilde{V}_0 D(E_F)$ große Werte annimmt, weichen ab.
+$\tilde{V}_0 D(E_F)$ große Werte annimmt, weichen ab. \cite{hunklinger}
 
 		\subsubsection{Widerstandslose Leitung}
 Wie bereits erklärt, können die bosonischen Cooper-Paare nun alle den Grundzustand
 einnehmen. Dies führt zu einer den ganzen Festkörper überspannenden 
 Bose-Einstein-Wellenfunktion, weshalb die Supraleitung als auch makroskopischer
 Quantenzustand beschrieben wird. \\
-Die widerstandslose Leitung erklärt sich nun durch die Energielücke der Breite 
-$E_g$ zwischen dem Grundzustand der Cooper-Paare und dem Gitter. Eine Wechselwirkung
-zwischen Elektronengas und Gitter kann nicht stattfinden, solange die 
-Elektronenenergie $E_g$ nicht erreicht. Mit dieser Erklärung leuchtet auch die 
-Existenz der kritischen Stromstärke $I_c$ und der kritischen Temperatur $T_c$ ein.
-Überschreitet die Elektronenenergie durch thermische Anregung, oder auch durch
-einen Stromfluss die Energielücke, so brechen die Cooper-Paare auf und der 
-Festkörper geht wieder in den normalleitenden Zustand über. \cite{hunklinger}, 
-\cite{suprawiki}
+Die widerstandslose Leitung erklärt sich nun durch die bereits behandelte 
+Energielücke der Breite $E_g$. Der Ladungstransport im Supraleiter beruht auf
+der gemeinsamen Bewegung aller Cooper-Paare, was durch einen zusätzlichen 
+Wellenvektor $\delta \vec{k}$ beschrieben wird. Die Paare befinden sich also
+im $(\vec{k} + \delta \vec{K} \uparrow, - \vec{k} + \delta \vec{k} \downarrow)$
+Zustand. Streut ein Cooper-Paar, so verlässt dieses den gemeinsamen BCS-Zustand,
+was elastische Streuung verbietet. Inelastische Streuung an hochenergetischen
+Phononen ist jedoch möglich. Hier wird ein Phonon absorbiert und dadurch die 
+Bindungsenergie des Cooper-Paars überwunden. Dieser Prozess hebt sich allerdings
+mit dem umgekehrten Prozess, der Entstehung von Cooper-Paaren unter Aussendung eines
+Phonons auf. Im Fall eines angelegten Gleichstroms werden außerdem alle 
+elektrischen Felder im Supraleiter kurzgeschlossen und die Quasiteilchen somit nicht
+beschleunigt, weshalb diese nicht zum Stromtransport beitragen. Beim anlegen einer
+Wechselspannung existiert dagegen ein elektrisches Feld und die Quasiteilchen werden
+beschleunigt. Eine widerstandslose Leitung ist also nur für Gleichstrom möglich.\\
+Mit dieser Erklärung leuchtet auch die Existenz der kritischen Stromstärke $I_c$ 
+und der kritischen Temperatur $T_c$ ein. Überschreitet die Elektronenenergie durch
+thermische Anregung, oder auch durch einen Stromfluss die Energielücke, so brechen
+die Cooper-Paare auf und der Festkörper geht wieder in den normalleitenden Zustand
+über. \cite{hunklinger}, \cite{suprawiki}
 
 	\subsection{Meisner-Ochsenfeld Effekt}
 Eine weitere wichtige Eigenschaft eines Supraleiters ist sein Verhalten im 
@@ -286,8 +297,30 @@ kritischen Temperatur $T_c$ den Festkörper durchdringt, in der supraleitenden P
 aus dem Leiter verdrängt wird. Hier wird in einer dünnen Schicht unter der 
 Oberfläche ein Abschirmstrom induziert, der die Feldlinien des äußeren Feldes aus
 dem Material verdrängt. Der Supraleiter ist also ein idealer Diamagnet. Dieser 
-Effekt wird als Meisner-Ochsenfeld Effekt bezeichnet. \cite{hunklinger}, 
-\cite{meisnerwiki}
+Effekt wird als Meisner-Ochsenfeld Effekt bezeichnet. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Abb/plotb.pdf}
+	\caption{Magnetfeld im Inneren des Supraleiters gegen das äußere Magnetfeld.
+			 Supraleitung bricht bei $B_c$ zusammen}
+	\label{plotb}
+\end{figure}
+Die Supraleitung bricht hierbei bei einer kritischen Feldstärke $B_c$ zusammen.
+Wird diese Feldstärke erreicht, so ist die Energie im Supraleiter ausreichend,
+um die Cooper-Paare aufzubrechen.
+Die kritische Feldstärke ist in guter Näherung gegeben durch 
+\[
+	B_c (T) = B_c (0) \left[ 1- \left(\frac{T}{T_c}\right)^2 \right]
+\]
+Hierbei ist $B_c(0)$ näherungsweise proportional zur Sprungtemperatur $T_c$.
+Die Abschirmströme erfordern die Präsenz des Magnetfeldes im Supraleiter. Die 
+Eindringtiefe ist durch die Londonsche Eindringtiefe $\lambda_L$ gegeben:
+\[
+	\lambda_L = \sqrt{ \frac{m_s}{\mu_0 n_s e_s^2} }
+\]
+Das Magnetfeld fällt im Supraleiter exponentiell ab. $\lambda_L$ ist hierbei 
+die charakteristische Länge dieses Abfalls.
+\cite{hunklinger}, \cite{meisnerwiki}
 
 		\subsubsection{Typ-I Supraleiter}
 Diese Art funktioniert genau wie in Abbildung \ref{Abb:meisner} gezeigt. In der 
