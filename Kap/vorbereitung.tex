@@ -58,7 +58,7 @@ Prinzip der Paarbildung bleibt jedoch ungeklärt.
 
         \subsubsection{Cooper-Paare}
 Grundlage der Supraleitung ist die Cooper-Paarbildung der Elektronen im Festkörper.
-\vspace{3pt}\\
+\\
 Es wird angenommen, dass ein Elektron, aufgrund seiner negativen Ladung, eine 
 Deformationsspur hinterlässt. 
 \begin{figure}[h]
@@ -74,6 +74,65 @@ angezogen. Durch die große Reichweite dieser Kraft, das erste Elektron ist nach
 einer Viertel Schwingperiode schon weit durch den Festkörper gewandert, wird sie
 nicht durch die Coulomb-Abstoßung aufgehoben.
 \vspace{3pt}\\
+Zur theoretischen Herleitung werden zwei wechselwirkende Elektronen betrachtet, die,
+wie oben beschrieben, virtuelle Phononen mit Wellenvektor $\vec{q}$ austauschen.
+Die Elektronen mit den ursprünglichen Wellenvektoren $\vec{k}_1, \vec{k}_2$ werden
+nun durch $\vec{k}_1' = \vec{k}_1 + \vec{q}$ und $\vec{k}_2 ' = \vec{k}_2 + \vec{q}$
+beschrieben. Durch die Impulserhaltung gilt für den Gesamtwellenvektor $\vec{K} =
+\vec{k}_1 + \vec{k}_2 = \vec{k}_1' + \vec{k}_2'$.\\
+Am absoluten Nullpunkt sind im Festkörper alle Zustände unterhalb von $E_F$
+besetzt. Dem Elektronenpaar sind somit lediglich Zustände oberhalb von $E_F$ 
+zugänglich. Die attraktive Wechselwirkung spielt sich somit im Energiebereich
+$E_F \, - \, E_F + \hbar \omega_D$ ab. $\hbar \omega_D$ ist hierbei die Energie
+des Phonons. Betrachtet man diesen Energiebereich im k-Raum beschreibt dieser eine
+Kugelschale der Dicke $\delta k = \frac{m \omega_D}{\hbar k_F}$. Anschaulich 
+erfüllen für ein vorgegebenes $\vec{K}$ nur Elektronenpaare die Impulserhaltung,
+wenn deren Wellenvektor in $\delta k$ anfängt oder endet. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Abb/cooperstreu.pdf}
+	\caption{links: Impulserhaltung der Paarwechselwirkung, rechts: Streuprozess in
+			 einem Cooper Paar: der $\vec{K}$ der Schwerpunktsbewegung ist null}
+	\label{streucooper}
+\end{figure}
+Dies ist in Abbildung \ref{streucooper} dargestellt. Hieraus kann auch gefolgert 
+werden, dass der Phononenaustausch für $\vec{K}=0$ am wahrscheinlichsten erfolgt.
+Somit gilt $\vec{k}_1 = - \vec{k}_2 = \vec{k}$.\\
+Für die Zweiteilchen Wellenfunktion $\Psi (\vec{r}_1,\vec{r}_2)$ bietet sich die 
+Verwendung einer Linearkombination von Einteilchenfunktionen zur Lösung an. Da 
+$\vec{k}_1 = - \vec{k}_2$, der Schwerpunkt also in Ruhe ist, genügt eine 
+Beschreibung durch relative Koordinaten. 
+\[
+	\Psi ( \vec{r} ) = A \exp ( i \vec{k}_1 \vec{r}_1 ) \cdot \exp( i \vec{k}_2
+					   \vec{r}_2) 
+					 = A \exp( i \vec{k} ( \vec{r}_1 - \vec{r}_2 ))
+					 = A \exp(i \vec{k} \vec{r} )
+\]
+Durch die ständige Streuung am Gitter in Zustände mit unterschiedlichen 
+Wellenvektoren, wird über diese Paarzustände summiert:
+\[
+	\Psi (\vec{r}) = \sum_{\vec{k}} A_{\vec{k}} e^{i \vec{k} \vec{r}}
+\]
+$| A_{\vec{k}} |^2$ beschreibt hierbei die Wahrscheinlichkeit ein Elektronenpaar
+im Zustand $(k,-k)$ anzutreffen.\\
+Bei der Betrachtung des Grenzfalls T=0 gilt für die Wellenzahl der Elektronen 
+$\displaystyle k_F < k < \sqrt{\frac{2m(E_F + \hbar \omega_D)}{\hbar^2}}$. $A_k$ 
+verschwindet dann für alle anderen $k$.\\
+Weiter muss die Schrödingergleichung mit dem Potential $\tilde{V}(\vec{r}_1,
+\vec{r}_2)$, bestehend aus der attraktiven und der abstoßenden 
+Coulombwechselwirkung, gelöst werden. Diese langwierige Rechnung wird hier nicht 
+weiter ausgeführt. Es wird angenommen, dass das Potential im Energiebereich
+$E_F < \frac{\hbar^2 k^2}{2m}, \; \frac{\hbar^2 k'^2}{2m} < E_F + \hbar \omega_D$
+den positiven, konstanten Wert $\tilde{V}_0$ annimmt und ansonsten 0 ist. 
+Auch wird die Zustandsdichte um die Fermi-Kante als konstant angenommen.\\
+Für die Energieänderung im Zuge der attraktiven Wechselwirkung errechnet sich 
+\[
+	\Delta E = E - 2 E_F = \frac{2\hbar \omega_D}{1- e^{4/(\tilde{V}_0 D(E_F))}}
+			 \approx - 2 \hbar \omega_D e^{4/(\tilde{V}_0 D(E_F)}
+\]
+Im letzten Schritt wurde $\tilde{V}_0 D(E_F) << 1$ angenommen. Die Energie der
+Cooper-Paare wird also durch die attraktive Wechselwirkung reduziert.
+\\
 Grundlage der BCS-Theorie ist nun die Kopplung zweier Elektronen durch diese 
 Wechselwirkung, wodurch der Verbund durch eine bosonische Gesamtwellenfunktion
 beschrieben werden muss. \cite{bcswiki}, \cite{hunklinger}
