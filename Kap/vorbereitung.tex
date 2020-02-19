@@ -325,6 +325,22 @@ Das Magnetfeld fällt im Supraleiter exponentiell ab. $\lambda_L$ ist hierbei
 die charakteristische Länge dieses Abfalls.
 \cite{hunklinger}, \cite{meisnerwiki}
 
+	\subsubsection{Londongleichungen}
+Die beiden Londongleichungen ergänzen die Maxwellgleichungen im Supraleiter. Die erste zu berücksichtigende Besonderheit ist die widerstandslose Leitung im Supraleiter, welche mithilfe des Drude-Modells folgendermaßen beschrieben werden kann:
+
+\[m\dot{v}=-eE\]
+Zusammen mit der Definition der Stromdichte $j=-env$ ergibt dies in der ersten Zeitableitung die \textbf{1. Londongleichung}:
+
+\[\dfrac{d\vec{j}}{dt}=\dfrac{ne^2}{m}\vec{E}\]	
+Diese Beziehung kann nun in die Maxwellgleichung $\text{rot}\vec{E}=-\dfrac{\partial\vec{B}}{\partial t}$ eingesetzt werden:
+
+\[\dfrac{\partial}{\partial t}\big(\text{rot}\vec{j}+\dfrac{ne^2}{m}\vec{B}\big)=0\]
+Die zeitliche Ableitung des Magnetflusses verschwindet also. Durch den Meißner-Effekt herrscht im Inneren eines Supraleiters jedoch kein Magnetfeld, weshalb die Gleichung auch ohne Zeitableitung gelten muss. Somit folgt die \textbf{2. Londongleichung}:
+
+\[\text{rot}\vec{j}=-\dfrac{ne^2}{m}\vec{B}\]
+Sie ergänzt das ideal-diamagnetische Verhalten der Supraleitung zu den Maxwellgleichungen.
+
+
 		\subsubsection{Typ-I Supraleiter}
 Diese Art funktioniert genau wie in Abbildung \ref{Abb:meisner} gezeigt. In der 
 supraleitenden Phase wird das Feld aus dem Inneren verdrängt. Die Normalleitung 
